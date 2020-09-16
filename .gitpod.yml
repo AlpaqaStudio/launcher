@@ -1,1 +1,2 @@
-image: gitpod/workspace-thin
+image:
+  file: .alpaqa.Dockerfile
