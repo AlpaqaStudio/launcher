@@ -65,6 +65,9 @@ RUN curl -fsSL https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && cp /var/lib/dpkg/status /var/lib/apt/dazzle-marks/lang-c.status \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 
+# net-tools (netstat)
+RUN apt-get install -yq net-tools
+
 ### Apache, PHP and Nginx ###
 LABEL dazzle/layer=tool-nginx
 LABEL dazzle/test=tests/lang-php.yaml
