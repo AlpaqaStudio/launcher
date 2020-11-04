@@ -6,12 +6,10 @@ RUN yes | unminimize \
         zip \
         unzip \
         bash-completion \
-        build-essential \
         htop \
         jq \
         less \
         locales \
-        man-db \
         nano \
         software-properties-common \
         sudo \
